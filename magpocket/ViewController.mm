@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "logicExecutor.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_FrontWebView setDelegate:self];
     [_FrontWebView loadRequest:requestObj];
+    _FrontWebView.allowsInlineMediaPlayback=true;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,6 +45,7 @@
             // TODO: Logic based on parameters
         }
         [webView stringByEvaluatingJavaScriptFromString:@"tonameCallBack({id:'0001',name:'hello'})"];
+        [webView stringByEvaluatingJavaScriptFromString:@"tonamePlayVideo({gui:['uid000001','uid000002']})"];
         return NO;
     }
     

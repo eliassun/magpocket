@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732F72DF1ADE3EA100796DC2 /* defaultbp.jason in Resources */ = {isa = PBXBuildFile; fileRef = 732F72DE1ADE3EA100796DC2 /* defaultbp.jason */; };
 		737C7F131ADC58550059048E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7F121ADC58550059048E /* main.m */; };
 		737C7F161ADC58550059048E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7F151ADC58550059048E /* AppDelegate.m */; };
-		737C7F191ADC58550059048E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7F181ADC58550059048E /* ViewController.m */; };
+		737C7F191ADC58550059048E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 737C7F181ADC58550059048E /* ViewController.mm */; };
 		737C7F1C1ADC58550059048E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F1A1ADC58550059048E /* Main.storyboard */; };
 		737C7F1E1ADC58550059048E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F1D1ADC58550059048E /* Images.xcassets */; };
 		737C7F211ADC58550059048E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F1F1ADC58550059048E /* LaunchScreen.xib */; };
@@ -22,6 +23,7 @@
 		737C7F451ADC5A530059048E /* img in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F3E1ADC5A530059048E /* img */; };
 		737C7F461ADC5A530059048E /* CallNative.js in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F3F1ADC5A530059048E /* CallNative.js */; };
 		737C7F481ADC5F950059048E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F471ADC5F950059048E /* test.html */; };
+		737C810E1ADDB1CA0059048E /* logicExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C810D1ADDB1CA0059048E /* logicExecutor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732F72DE1ADE3EA100796DC2 /* defaultbp.jason */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = defaultbp.jason; path = www/defaultbp.jason; sourceTree = "<group>"; };
 		737C7F0D1ADC58550059048E /* magpocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magpocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		737C7F111ADC58550059048E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		737C7F121ADC58550059048E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		737C7F141ADC58550059048E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		737C7F151ADC58550059048E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		737C7F171ADC58550059048E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		737C7F181ADC58550059048E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		737C7F181ADC58550059048E /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		737C7F1B1ADC58550059048E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		737C7F1D1ADC58550059048E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		737C7F201ADC58550059048E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +59,8 @@
 		737C7F3E1ADC5A530059048E /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = www/img; sourceTree = "<group>"; };
 		737C7F3F1ADC5A530059048E /* CallNative.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = CallNative.js; path = www/CallNative.js; sourceTree = "<group>"; };
 		737C7F471ADC5F950059048E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = www/test.html; sourceTree = "<group>"; };
+		737C810D1ADDB1CA0059048E /* logicExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logicExecutor.cpp; path = logicexecutor/logicExecutor/logicExecutor.cpp; sourceTree = "<group>"; };
+		737C81831ADDB7260059048E /* logicExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = logicExecutor.h; path = logicexecutor/logicExecutor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 		737C7F041ADC58550059048E = {
 			isa = PBXGroup;
 			children = (
+				737C810C1ADDB1550059048E /* SoftCPU */,
 				737C7F381ADC5A180059048E /* WWW */,
 				737C7F0F1ADC58550059048E /* magpocket */,
 				737C7F291ADC58560059048E /* magpocketTests */,
@@ -101,7 +107,7 @@
 				737C7F141ADC58550059048E /* AppDelegate.h */,
 				737C7F151ADC58550059048E /* AppDelegate.m */,
 				737C7F171ADC58550059048E /* ViewController.h */,
-				737C7F181ADC58550059048E /* ViewController.m */,
+				737C7F181ADC58550059048E /* ViewController.mm */,
 				737C7F1A1ADC58550059048E /* Main.storyboard */,
 				737C7F1D1ADC58550059048E /* Images.xcassets */,
 				737C7F1F1ADC58550059048E /* LaunchScreen.xib */,
@@ -147,8 +153,18 @@
 				737C7F3D1ADC5A530059048E /* css */,
 				737C7F3E1ADC5A530059048E /* img */,
 				737C7F3F1ADC5A530059048E /* CallNative.js */,
+				732F72DE1ADE3EA100796DC2 /* defaultbp.jason */,
 			);
 			name = WWW;
+			sourceTree = "<group>";
+		};
+		737C810C1ADDB1550059048E /* SoftCPU */ = {
+			isa = PBXGroup;
+			children = (
+				737C810D1ADDB1CA0059048E /* logicExecutor.cpp */,
+				737C81831ADDB7260059048E /* logicExecutor.h */,
+			);
+			name = SoftCPU;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +250,7 @@
 				737C7F451ADC5A530059048E /* img in Resources */,
 				737C7F421ADC5A530059048E /* lib in Resources */,
 				737C7F481ADC5F950059048E /* test.html in Resources */,
+				732F72DF1ADE3EA100796DC2 /* defaultbp.jason in Resources */,
 				737C7F1C1ADC58550059048E /* Main.storyboard in Resources */,
 				737C7F401ADC5A530059048E /* index.html in Resources */,
 				737C7F431ADC5A530059048E /* js in Resources */,
@@ -259,9 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737C7F191ADC58550059048E /* ViewController.m in Sources */,
+				737C7F191ADC58550059048E /* ViewController.mm in Sources */,
 				737C7F161ADC58550059048E /* AppDelegate.m in Sources */,
 				737C7F131ADC58550059048E /* main.m in Sources */,
+				737C810E1ADDB1CA0059048E /* logicExecutor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +470,7 @@
 				737C7F321ADC58560059048E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		737C7F331ADC58560059048E /* Build configuration list for PBXNativeTarget "magpocketTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +479,7 @@
 				737C7F351ADC58560059048E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

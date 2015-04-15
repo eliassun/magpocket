@@ -8,11 +8,42 @@
 var tonameCallNativeFunc = function(parameters) {
     var iframe = document.createElement('iframe');
     iframe.setAttribute('src', 'tonamecallnative:' + JSON.stringify(parameters));
-    
     document.documentElement.appendChild(iframe);
     iframe.parentNode.removeChild(iframe);
     iframe = null;
 };
-/*
-sendObjectMessage({name: 'Bryan', company: 'Tumblr'});
-*/
+var tonamePlayVideo= function(parameters){
+    var jp=parameters;
+    if(jp==null)
+    {
+        window.alert("Cannot play the video. Not specify what to play");
+        return;
+    }
+    //window.alert(jp.gui[0]);
+   var video = document.getElementById(jp.gui[0]);
+   if(video==null)
+       window.alert("wrong");
+   else
+   {
+      var result=video.play();
+       video.onended = tonameAlert;
+   }
+    
+    var audio = document.getElementById("uid000003");
+    audio.play();
+    
+    tonamePlaying();
+    
+
+}
+
+var tonameAlert = function(parameters)
+{
+    alert("The audio has ended");
+}
+
+
+var tonamePlaying = function(parameters)
+{
+    alert("The audio is playing");
+}

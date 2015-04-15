@@ -1,0 +1,65 @@
+/* 
+  defaultbp.jason.strings
+  magpocket
+
+  Created by Elias Sun on 4/14/15.
+  Copyright (c) 2015 ishare. All rights reserved.
+*/
+
+
+{
+    "uid000000":{
+        "basic":{
+        "func":"start",
+        "title":"Start Up"
+        },
+        "triggerNextFunc":{
+            "inputLen":"1",
+            "timeout":"no",
+            "timeoutInterval":"5",
+            "DeclineChars":"",
+            "maxInvalidInput":"3",
+            "stopPreMedia":"yes"
+        }
+        "connection":{
+            "default":"uid000001"
+        }
+    },
+
+   "uid000001":{
+    "basic":{
+        "func":"playvideo",
+        "title":"Play Video"
+    },
+    "triggerNextFunc":{
+        "inputLen":"1",
+        "timeout":"no",
+        "timeoutInterval":"5",
+        "DeclineChars":"",
+        "maxInvalidInput":"3",
+        "stopPreMedia":"yes"
+    }
+    "parameters":{
+        "url":"http://myvideo",
+        "playresult":{
+            "return":"storage0001",
+            "callbackfunc":"playback"
+        }
+    }
+    "goNextBy":{
+        "default":"uid000001",
+        "timeout":"uid000002",
+        "error":  "uid000003",
+        "onclick":"uid000004",
+        "onchange":"uid00005",
+        "onhold":  "uid00006",
+        "onpause": "uid00007",
+        "onplay":  "uid00008",
+        "A":       "uid00009"
+    },
+    "gui":{
+        ["gui000001","gui0000002"]
+    }
+},
+
+}
