@@ -47,3 +47,8 @@ var tonamePlaying = function(parameters)
 {
     alert("The audio is playing");
 }
+
+var tonameLoadDefaultApp= function(parameters)
+{
+
+}

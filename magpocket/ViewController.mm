@@ -10,7 +10,8 @@
 #import "logicExecutor.h"
 
 @interface ViewController ()
-
+@property (nonatomic, readonly)  SoftCPUInputOutputManager * cpu;
+@property (nonatomic,readwrite)  NSMutableArray *cmdtable;
 @end
 
 @implementation ViewController
@@ -61,5 +62,9 @@
     _FrontWebView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
+char * getNextEntry(int cmdseq)
+{
+    return NULL;
+}
 
 @end
