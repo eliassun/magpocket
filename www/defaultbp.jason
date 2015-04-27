@@ -1,4 +1,4 @@
-/* 
+/*
   defaultbp.jason.strings
   magpocket
 
@@ -8,58 +8,59 @@
 
 
 {
-    "uid000000":{
+    "uid0000000000":{
         "basic":{
         "func":"start",
+        "funcid":0,
         "title":"Start Up"
         },
         "triggerNextFunc":{
-            "inputLen":"1",
+            "inputLen":1,
             "timeout":"no",
-            "timeoutInterval":"5",
+            "timeoutInterval":5,
             "DeclineChars":"",
-            "maxInvalidInput":"3",
-            "stopPreMedia":"yes"
-        }
-        "connection":{
-            "default":"uid000001"
+            "maxInvalidInput":3,
+            "stopPreMedia":"yes",
+            "autoNext":"yes"
+        },
+        "goNextBy":{
+            "default":"uid0000000001"
         }
     },
 
-   "uid000001":{
-    "basic":{
-        "func":"playvideo",
-        "title":"Play Video"
-    },
-    "triggerNextFunc":{
-        "inputLen":"1",
-        "timeout":"no",
-        "timeoutInterval":"5",
-        "DeclineChars":"",
-        "maxInvalidInput":"3",
-        "stopPreMedia":"yes"
+   "uid0000000001":{
+        "basic":{
+            "func":"playvideo",
+            "title":"Play Video"
+        },
+        "triggerNextFunc":{
+            "inputLen":1,
+            "timeout":"no",
+            "timeoutInterval":5,
+            "DeclineChars":"",
+            "maxInvalidInput":3,
+            "stopPreMedia":"yes"
+        },
+        "parameters":{
+            "url":"http://myvideo",
+            "playresult":{
+                "return":"storage0001",
+                "callbackfunc":"playback"
+            }
+        },
+        "goNextBy":{
+            "default":"uid0000000001",
+            "timeout":"uid0000000002",
+            "error":  "uid0000000003",
+            "eventonclick":"uid0000000004",
+            "eventonchange":"uid0000000005",
+            "eventonhold":  "uid0000000006",
+            "eventonpause": "uid0000000007",
+            "eventonplay":  "uid0000000008",
+            "A":       "uid0000000009"
+        },
+        "gui":["gui000001","gui0000002"]
+
     }
-    "parameters":{
-        "url":"http://myvideo",
-        "playresult":{
-            "return":"storage0001",
-            "callbackfunc":"playback"
-        }
-    }
-    "goNextBy":{
-        "default":"uid000001",
-        "timeout":"uid000002",
-        "error":  "uid000003",
-        "onclick":"uid000004",
-        "onchange":"uid00005",
-        "onhold":  "uid00006",
-        "onpause": "uid00007",
-        "onplay":  "uid00008",
-        "A":       "uid00009"
-    },
-    "gui":{
-        ["gui000001","gui0000002"]
-    }
-},
 
 }

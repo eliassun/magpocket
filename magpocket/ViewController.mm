@@ -10,7 +10,7 @@
 #import "logicExecutor.h"
 
 @interface ViewController ()
-@property (nonatomic, readonly)  SoftCPUInputOutputManager * cpu;
+@property (nonatomic, readwrite)  SoftCPUInputOutputManager * cpu;
 @property (nonatomic,readwrite)  NSMutableArray *cmdtable;
 @end
 
@@ -24,7 +24,44 @@
     [_FrontWebView setDelegate:self];
     [_FrontWebView loadRequest:requestObj];
     _FrontWebView.allowsInlineMediaPlayback=true;
+    self.cpu = new SoftCPUInputOutputManager;
+    self.cpu->setcmdfunc(getNextEntry);
+    
+    //self.cpu->newEvent((char*)"{\"onclick\":{\"timestamp\":\"4455\",\"value\":\"990\"}}");
+    //self.cpu->newEvent((char*)"{\"onchange\":{\"timestamp\":\"4455\",\"value\":\"990\"}}");
+    //self.cpu->readEvent((char*)"uid0000000001");
+
+    //NSString *jsPath = [[NSBundle mainBundle] pathForResource:@"defaultbp" ofType:@"jason"];
+    //self.cpu->runApp([jsPath UTF8String]);
+    
+    //self.cpu->elLoadApp([jsPath UTF8String]);
+    [NSThread detachNewThreadSelector:@selector(startTheBackgroundJob) toTarget:self withObject:nil];
+    
 }
+
+- (void)startTheBackgroundJob {
+    
+    // wait for 3 seconds before starting the thread, you don't have to do that. This is just an example how to stop the NSThread for some time
+    //[NSThread sleepForTimeInterval:3];
+    //[self performSelectorOnMainThread:@selector(makeMyProgressBarMoving) withObject:nil waitUntilDone:NO];
+    NSString *jsPath = [[NSBundle mainBundle] pathForResource:@"defaultbp" ofType:@"jason"];
+    self.cpu->runApp([jsPath UTF8String]);
+    
+}
+
+- (void)makeMyProgressBarMoving {
+/*
+    float actual = [threadProgressView progress];
+    threadValueLabel.text = [NSString stringWithFormat:@"%.2f", actual];
+    if (actual < 1) {
+        threadProgressView.progress = actual + 0.01;
+        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(makeMyProgressBarMoving) userInfo:nil repeats:NO];
+    }
+    else threadStartButton.hidden = NO;
+  */
+    NSLog(@"Hello......");
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -62,7 +99,7 @@
     _FrontWebView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
 
-char * getNextEntry(int cmdseq)
+char * getNextEntry(unsigned long cmdseq)
 {
     return NULL;
 }

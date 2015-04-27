@@ -24,6 +24,11 @@
 		737C7F461ADC5A530059048E /* CallNative.js in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F3F1ADC5A530059048E /* CallNative.js */; };
 		737C7F481ADC5F950059048E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 737C7F471ADC5F950059048E /* test.html */; };
 		737C810E1ADDB1CA0059048E /* logicExecutor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 737C810D1ADDB1CA0059048E /* logicExecutor.cpp */; };
+		73B7A6211AEC97AD00EC2E30 /* jsoncpp in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A6201AEC97AD00EC2E30 /* jsoncpp */; };
+		73B7A6291AEC9C9800EC2E30 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B7A6241AEC9C9800EC2E30 /* json_reader.cpp */; };
+		73B7A62A1AEC9C9800EC2E30 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B7A6261AEC9C9800EC2E30 /* json_value.cpp */; };
+		73B7A62B1AEC9C9800EC2E30 /* json_valueiterator.inl in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A6271AEC9C9800EC2E30 /* json_valueiterator.inl */; };
+		73B7A62C1AEC9C9800EC2E30 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B7A6281AEC9C9800EC2E30 /* json_writer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,23 @@
 		737C7F471ADC5F950059048E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = www/test.html; sourceTree = "<group>"; };
 		737C810D1ADDB1CA0059048E /* logicExecutor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = logicExecutor.cpp; path = logicexecutor/logicExecutor/logicExecutor.cpp; sourceTree = "<group>"; };
 		737C81831ADDB7260059048E /* logicExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = logicExecutor.h; path = logicexecutor/logicExecutor.h; sourceTree = "<group>"; };
+		73B7A5AB1AEC058F00EC2E30 /* commonheader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = commonheader.h; path = logicexecutor/commonheader.h; sourceTree = "<group>"; };
+		73B7A6201AEC97AD00EC2E30 /* jsoncpp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsoncpp; sourceTree = "<group>"; };
+		73B7A6241AEC9C9800EC2E30 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_reader.cpp; path = jsoncpp/src/lib_json/json_reader.cpp; sourceTree = "<group>"; };
+		73B7A6251AEC9C9800EC2E30 /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_tool.h; path = jsoncpp/src/lib_json/json_tool.h; sourceTree = "<group>"; };
+		73B7A6261AEC9C9800EC2E30 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_value.cpp; path = jsoncpp/src/lib_json/json_value.cpp; sourceTree = "<group>"; };
+		73B7A6271AEC9C9800EC2E30 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = json_valueiterator.inl; path = jsoncpp/src/lib_json/json_valueiterator.inl; sourceTree = "<group>"; };
+		73B7A6281AEC9C9800EC2E30 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_writer.cpp; path = jsoncpp/src/lib_json/json_writer.cpp; sourceTree = "<group>"; };
+		73B7A62D1AEC9CA800EC2E30 /* assertions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = assertions.h; path = jsoncpp/include/json/assertions.h; sourceTree = "<group>"; };
+		73B7A62E1AEC9CA800EC2E30 /* autolink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = jsoncpp/include/json/autolink.h; sourceTree = "<group>"; };
+		73B7A62F1AEC9CA800EC2E30 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = jsoncpp/include/json/config.h; sourceTree = "<group>"; };
+		73B7A6301AEC9CA800EC2E30 /* features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = features.h; path = jsoncpp/include/json/features.h; sourceTree = "<group>"; };
+		73B7A6311AEC9CA800EC2E30 /* forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = forwards.h; path = jsoncpp/include/json/forwards.h; sourceTree = "<group>"; };
+		73B7A6321AEC9CA800EC2E30 /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = json.h; path = jsoncpp/include/json/json.h; sourceTree = "<group>"; };
+		73B7A6331AEC9CA800EC2E30 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = reader.h; path = jsoncpp/include/json/reader.h; sourceTree = "<group>"; };
+		73B7A6341AEC9CA800EC2E30 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = value.h; path = jsoncpp/include/json/value.h; sourceTree = "<group>"; };
+		73B7A6351AEC9CA800EC2E30 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = jsoncpp/include/json/version.h; sourceTree = "<group>"; };
+		73B7A6361AEC9CA800EC2E30 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writer.h; path = jsoncpp/include/json/writer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +106,7 @@
 		737C7F041ADC58550059048E = {
 			isa = PBXGroup;
 			children = (
+				73B7A6231AEC9C6700EC2E30 /* jsoncpp */,
 				737C810C1ADDB1550059048E /* SoftCPU */,
 				737C7F381ADC5A180059048E /* WWW */,
 				737C7F0F1ADC58550059048E /* magpocket */,
@@ -163,8 +186,32 @@
 			children = (
 				737C810D1ADDB1CA0059048E /* logicExecutor.cpp */,
 				737C81831ADDB7260059048E /* logicExecutor.h */,
+				73B7A5AB1AEC058F00EC2E30 /* commonheader.h */,
 			);
 			name = SoftCPU;
+			sourceTree = "<group>";
+		};
+		73B7A6231AEC9C6700EC2E30 /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				73B7A62D1AEC9CA800EC2E30 /* assertions.h */,
+				73B7A62E1AEC9CA800EC2E30 /* autolink.h */,
+				73B7A62F1AEC9CA800EC2E30 /* config.h */,
+				73B7A6301AEC9CA800EC2E30 /* features.h */,
+				73B7A6311AEC9CA800EC2E30 /* forwards.h */,
+				73B7A6321AEC9CA800EC2E30 /* json.h */,
+				73B7A6331AEC9CA800EC2E30 /* reader.h */,
+				73B7A6341AEC9CA800EC2E30 /* value.h */,
+				73B7A6351AEC9CA800EC2E30 /* version.h */,
+				73B7A6361AEC9CA800EC2E30 /* writer.h */,
+				73B7A6241AEC9C9800EC2E30 /* json_reader.cpp */,
+				73B7A6251AEC9C9800EC2E30 /* json_tool.h */,
+				73B7A6261AEC9C9800EC2E30 /* json_value.cpp */,
+				73B7A6271AEC9C9800EC2E30 /* json_valueiterator.inl */,
+				73B7A6281AEC9C9800EC2E30 /* json_writer.cpp */,
+				73B7A6201AEC97AD00EC2E30 /* jsoncpp */,
+			);
+			name = jsoncpp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				737C7F451ADC5A530059048E /* img in Resources */,
+				73B7A62B1AEC9C9800EC2E30 /* json_valueiterator.inl in Resources */,
 				737C7F421ADC5A530059048E /* lib in Resources */,
 				737C7F481ADC5F950059048E /* test.html in Resources */,
 				732F72DF1ADE3EA100796DC2 /* defaultbp.jason in Resources */,
@@ -257,6 +305,7 @@
 				737C7F441ADC5A530059048E /* css in Resources */,
 				737C7F211ADC58550059048E /* LaunchScreen.xib in Resources */,
 				737C7F461ADC5A530059048E /* CallNative.js in Resources */,
+				73B7A6211AEC97AD00EC2E30 /* jsoncpp in Resources */,
 				737C7F1E1ADC58550059048E /* Images.xcassets in Resources */,
 				737C7F411ADC5A530059048E /* templates in Resources */,
 			);
@@ -276,10 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B7A6291AEC9C9800EC2E30 /* json_reader.cpp in Sources */,
+				73B7A62A1AEC9C9800EC2E30 /* json_value.cpp in Sources */,
 				737C7F191ADC58550059048E /* ViewController.mm in Sources */,
 				737C7F161ADC58550059048E /* AppDelegate.m in Sources */,
 				737C7F131ADC58550059048E /* main.m in Sources */,
 				737C810E1ADDB1CA0059048E /* logicExecutor.cpp in Sources */,
+				73B7A62C1AEC9C9800EC2E30 /* json_writer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +453,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/jsoncpp/include",
+				);
 				INFOPLIST_FILE = magpocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +468,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/jsoncpp/include",
+				);
 				INFOPLIST_FILE = magpocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

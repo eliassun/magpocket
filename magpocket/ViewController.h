@@ -11,6 +11,5 @@
 @interface ViewController : UIViewController<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *FrontWebView;
 
-
 @end
 
