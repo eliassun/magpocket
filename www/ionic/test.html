@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script>
+            var tonameCallBack = function(parameters)
+            {
+                window.alert(parameters.id);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Hello World</p>
+        <button onclick="tonameCallNativeFunc({func:'dialpad',handlerid:'001',callback:'dialpadCallBack', name: 'Bryan', company: 'Tumblr'});">Try it</button>
+    </body>
+</html>

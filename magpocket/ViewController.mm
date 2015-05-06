@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"indexaf" ofType:@"html"]];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_FrontWebView setDelegate:self];
     [_FrontWebView loadRequest:requestObj];

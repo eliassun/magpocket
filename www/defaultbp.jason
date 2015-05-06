@@ -19,7 +19,7 @@
             "timeout":"no",
             "timeoutInterval":5,
             "DeclineChars":"",
-            "maxInvalidInput":3,
+            "maxInvalidInputTimes":3,
             "stopPreMedia":"yes",
             "autoNext":"yes"
         },
@@ -38,7 +38,7 @@
             "timeout":"no",
             "timeoutInterval":5,
             "DeclineChars":"",
-            "maxInvalidInput":3,
+            "maxInvalidInputTimes":3,
             "stopPreMedia":"yes"
         },
         "parameters":{
