@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73181D661B000B6400E0428F /* json-editor in Resources */ = {isa = PBXBuildFile; fileRef = 73181D651B000B6400E0428F /* json-editor */; };
+		73181D681B00254B00E0428F /* intelAF in Resources */ = {isa = PBXBuildFile; fileRef = 73181D671B00254B00E0428F /* intelAF */; };
+		73181D6A1B00255C00E0428F /* ionic in Resources */ = {isa = PBXBuildFile; fileRef = 73181D691B00255C00E0428F /* ionic */; };
 		732F72DF1ADE3EA100796DC2 /* defaultbp.jason in Resources */ = {isa = PBXBuildFile; fileRef = 732F72DE1ADE3EA100796DC2 /* defaultbp.jason */; };
 		737C7F131ADC58550059048E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7F121ADC58550059048E /* main.m */; };
 		737C7F161ADC58550059048E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7F151ADC58550059048E /* AppDelegate.m */; };
@@ -22,30 +25,6 @@
 		73B7A62A1AEC9C9800EC2E30 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B7A6261AEC9C9800EC2E30 /* json_value.cpp */; };
 		73B7A62B1AEC9C9800EC2E30 /* json_valueiterator.inl in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A6271AEC9C9800EC2E30 /* json_valueiterator.inl */; };
 		73B7A62C1AEC9C9800EC2E30 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B7A6281AEC9C9800EC2E30 /* json_writer.cpp */; };
-		73B7A9101AEF29FA00EC2E30 /* indexionic.html in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9091AEF29FA00EC2E30 /* indexionic.html */; };
-		73B7A9111AEF29FA00EC2E30 /* templates in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A90A1AEF29FA00EC2E30 /* templates */; };
-		73B7A9121AEF29FA00EC2E30 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A90B1AEF29FA00EC2E30 /* lib */; };
-		73B7A9131AEF29FA00EC2E30 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A90C1AEF29FA00EC2E30 /* js */; };
-		73B7A9141AEF29FA00EC2E30 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A90D1AEF29FA00EC2E30 /* css */; };
-		73B7A9151AEF29FA00EC2E30 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A90E1AEF29FA00EC2E30 /* img */; };
-		73B7A9161AEF29FA00EC2E30 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A90F1AEF29FA00EC2E30 /* test.html */; };
-		73B7A92A1AEF2C2500EC2E30 /* ajax.html in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9191AEF2C2500EC2E30 /* ajax.html */; };
-		73B7A92B1AEF2C2500EC2E30 /* animgenerator in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A91A1AEF2C2500EC2E30 /* animgenerator */; };
-		73B7A92C1AEF2C2500EC2E30 /* build in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A91B1AEF2C2500EC2E30 /* build */; };
-		73B7A92D1AEF2C2500EC2E30 /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A91C1AEF2C2500EC2E30 /* docs */; };
-		73B7A92E1AEF2C2500EC2E30 /* Gruntfile.js in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A91D1AEF2C2500EC2E30 /* Gruntfile.js */; };
-		73B7A92F1AEF2C2500EC2E30 /* indexaf.html in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A91E1AEF2C2500EC2E30 /* indexaf.html */; };
-		73B7A9301AEF2C2500EC2E30 /* jquery-widgets in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A91F1AEF2C2500EC2E30 /* jquery-widgets */; };
-		73B7A9311AEF2C2500EC2E30 /* karma.conf.js in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9201AEF2C2500EC2E30 /* karma.conf.js */; };
-		73B7A9321AEF2C2500EC2E30 /* lancaster in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9211AEF2C2500EC2E30 /* lancaster */; };
-		73B7A9331AEF2C2500EC2E30 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9221AEF2C2500EC2E30 /* license.txt */; };
-		73B7A9341AEF2C2500EC2E30 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9231AEF2C2500EC2E30 /* package.json */; };
-		73B7A9351AEF2C2500EC2E30 /* partials in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9241AEF2C2500EC2E30 /* partials */; };
-		73B7A9361AEF2C2500EC2E30 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 73B7A9251AEF2C2500EC2E30 /* README.md */; };
-		73B7A9371AEF2C2500EC2E30 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9261AEF2C2500EC2E30 /* samples */; };
-		73B7A9381AEF2C2500EC2E30 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9271AEF2C2500EC2E30 /* src */; };
-		73B7A9391AEF2C2500EC2E30 /* templates in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9281AEF2C2500EC2E30 /* templates */; };
-		73B7A93A1AEF2C2500EC2E30 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 73B7A9291AEF2C2500EC2E30 /* test */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73181D651B000B6400E0428F /* json-editor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "json-editor"; path = "www/json-editor"; sourceTree = "<group>"; };
+		73181D671B00254B00E0428F /* intelAF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = intelAF; path = www/intelAF; sourceTree = "<group>"; };
+		73181D691B00255C00E0428F /* ionic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ionic; path = www/ionic; sourceTree = "<group>"; };
 		732F72DE1ADE3EA100796DC2 /* defaultbp.jason */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = defaultbp.jason; path = www/defaultbp.jason; sourceTree = "<group>"; };
 		737C7F0D1ADC58550059048E /* magpocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magpocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		737C7F111ADC58550059048E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,30 +75,6 @@
 		73B7A6341AEC9CA800EC2E30 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = value.h; path = jsoncpp/include/json/value.h; sourceTree = "<group>"; };
 		73B7A6351AEC9CA800EC2E30 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = jsoncpp/include/json/version.h; sourceTree = "<group>"; };
 		73B7A6361AEC9CA800EC2E30 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writer.h; path = jsoncpp/include/json/writer.h; sourceTree = "<group>"; };
-		73B7A9091AEF29FA00EC2E30 /* indexionic.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = indexionic.html; path = www/ionic/indexionic.html; sourceTree = "<group>"; };
-		73B7A90A1AEF29FA00EC2E30 /* templates */ = {isa = PBXFileReference; lastKnownFileType = folder; name = templates; path = www/ionic/templates; sourceTree = "<group>"; };
-		73B7A90B1AEF29FA00EC2E30 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = www/ionic/lib; sourceTree = "<group>"; };
-		73B7A90C1AEF29FA00EC2E30 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = www/ionic/js; sourceTree = "<group>"; };
-		73B7A90D1AEF29FA00EC2E30 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = www/ionic/css; sourceTree = "<group>"; };
-		73B7A90E1AEF29FA00EC2E30 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = www/ionic/img; sourceTree = "<group>"; };
-		73B7A90F1AEF29FA00EC2E30 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = www/ionic/test.html; sourceTree = "<group>"; };
-		73B7A9191AEF2C2500EC2E30 /* ajax.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = ajax.html; path = www/intelAF/ajax.html; sourceTree = "<group>"; };
-		73B7A91A1AEF2C2500EC2E30 /* animgenerator */ = {isa = PBXFileReference; lastKnownFileType = folder; name = animgenerator; path = www/intelAF/animgenerator; sourceTree = "<group>"; };
-		73B7A91B1AEF2C2500EC2E30 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = build; path = www/intelAF/build; sourceTree = "<group>"; };
-		73B7A91C1AEF2C2500EC2E30 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = docs; path = www/intelAF/docs; sourceTree = "<group>"; };
-		73B7A91D1AEF2C2500EC2E30 /* Gruntfile.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Gruntfile.js; path = www/intelAF/Gruntfile.js; sourceTree = "<group>"; };
-		73B7A91E1AEF2C2500EC2E30 /* indexaf.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = indexaf.html; path = www/intelAF/indexaf.html; sourceTree = "<group>"; };
-		73B7A91F1AEF2C2500EC2E30 /* jquery-widgets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "jquery-widgets"; path = "www/intelAF/jquery-widgets"; sourceTree = "<group>"; };
-		73B7A9201AEF2C2500EC2E30 /* karma.conf.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = karma.conf.js; path = www/intelAF/karma.conf.js; sourceTree = "<group>"; };
-		73B7A9211AEF2C2500EC2E30 /* lancaster */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lancaster; path = www/intelAF/lancaster; sourceTree = "<group>"; };
-		73B7A9221AEF2C2500EC2E30 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = license.txt; path = www/intelAF/license.txt; sourceTree = "<group>"; };
-		73B7A9231AEF2C2500EC2E30 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = package.json; path = www/intelAF/package.json; sourceTree = "<group>"; };
-		73B7A9241AEF2C2500EC2E30 /* partials */ = {isa = PBXFileReference; lastKnownFileType = folder; name = partials; path = www/intelAF/partials; sourceTree = "<group>"; };
-		73B7A9251AEF2C2500EC2E30 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = www/intelAF/README.md; sourceTree = "<group>"; };
-		73B7A9261AEF2C2500EC2E30 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = samples; path = www/intelAF/samples; sourceTree = "<group>"; };
-		73B7A9271AEF2C2500EC2E30 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = www/intelAF/src; sourceTree = "<group>"; };
-		73B7A9281AEF2C2500EC2E30 /* templates */ = {isa = PBXFileReference; lastKnownFileType = folder; name = templates; path = www/intelAF/templates; sourceTree = "<group>"; };
-		73B7A9291AEF2C2500EC2E30 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; name = test; path = www/intelAF/test; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +160,9 @@
 		737C7F381ADC5A180059048E /* WWW */ = {
 			isa = PBXGroup;
 			children = (
-				73B7A9181AEF2ABE00EC2E30 /* IntelAF */,
-				73B7A9171AEF2A1900EC2E30 /* ionic */,
+				73181D671B00254B00E0428F /* intelAF */,
+				73181D691B00255C00E0428F /* ionic */,
+				73181D651B000B6400E0428F /* json-editor */,
 				737C7F3F1ADC5A530059048E /* CallNative.js */,
 				732F72DE1ADE3EA100796DC2 /* defaultbp.jason */,
 			);
@@ -241,44 +200,6 @@
 				73B7A6201AEC97AD00EC2E30 /* jsoncpp */,
 			);
 			name = jsoncpp;
-			sourceTree = "<group>";
-		};
-		73B7A9171AEF2A1900EC2E30 /* ionic */ = {
-			isa = PBXGroup;
-			children = (
-				73B7A9091AEF29FA00EC2E30 /* indexionic.html */,
-				73B7A90A1AEF29FA00EC2E30 /* templates */,
-				73B7A90B1AEF29FA00EC2E30 /* lib */,
-				73B7A90C1AEF29FA00EC2E30 /* js */,
-				73B7A90D1AEF29FA00EC2E30 /* css */,
-				73B7A90E1AEF29FA00EC2E30 /* img */,
-				73B7A90F1AEF29FA00EC2E30 /* test.html */,
-			);
-			name = ionic;
-			sourceTree = "<group>";
-		};
-		73B7A9181AEF2ABE00EC2E30 /* IntelAF */ = {
-			isa = PBXGroup;
-			children = (
-				73B7A9191AEF2C2500EC2E30 /* ajax.html */,
-				73B7A91A1AEF2C2500EC2E30 /* animgenerator */,
-				73B7A91B1AEF2C2500EC2E30 /* build */,
-				73B7A91C1AEF2C2500EC2E30 /* docs */,
-				73B7A91D1AEF2C2500EC2E30 /* Gruntfile.js */,
-				73B7A91E1AEF2C2500EC2E30 /* indexaf.html */,
-				73B7A91F1AEF2C2500EC2E30 /* jquery-widgets */,
-				73B7A9201AEF2C2500EC2E30 /* karma.conf.js */,
-				73B7A9211AEF2C2500EC2E30 /* lancaster */,
-				73B7A9221AEF2C2500EC2E30 /* license.txt */,
-				73B7A9231AEF2C2500EC2E30 /* package.json */,
-				73B7A9241AEF2C2500EC2E30 /* partials */,
-				73B7A9251AEF2C2500EC2E30 /* README.md */,
-				73B7A9261AEF2C2500EC2E30 /* samples */,
-				73B7A9271AEF2C2500EC2E30 /* src */,
-				73B7A9281AEF2C2500EC2E30 /* templates */,
-				73B7A9291AEF2C2500EC2E30 /* test */,
-			);
-			name = IntelAF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,36 +283,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B7A9141AEF29FA00EC2E30 /* css in Resources */,
-				73B7A9121AEF29FA00EC2E30 /* lib in Resources */,
-				73B7A9161AEF29FA00EC2E30 /* test.html in Resources */,
-				73B7A92E1AEF2C2500EC2E30 /* Gruntfile.js in Resources */,
-				73B7A9321AEF2C2500EC2E30 /* lancaster in Resources */,
+				73181D681B00254B00E0428F /* intelAF in Resources */,
+				73181D6A1B00255C00E0428F /* ionic in Resources */,
 				73B7A62B1AEC9C9800EC2E30 /* json_valueiterator.inl in Resources */,
-				73B7A92F1AEF2C2500EC2E30 /* indexaf.html in Resources */,
 				732F72DF1ADE3EA100796DC2 /* defaultbp.jason in Resources */,
 				737C7F1C1ADC58550059048E /* Main.storyboard in Resources */,
-				73B7A9311AEF2C2500EC2E30 /* karma.conf.js in Resources */,
-				73B7A9151AEF29FA00EC2E30 /* img in Resources */,
-				73B7A9101AEF29FA00EC2E30 /* indexionic.html in Resources */,
-				73B7A9331AEF2C2500EC2E30 /* license.txt in Resources */,
 				737C7F211ADC58550059048E /* LaunchScreen.xib in Resources */,
-				73B7A9341AEF2C2500EC2E30 /* package.json in Resources */,
-				73B7A9371AEF2C2500EC2E30 /* samples in Resources */,
-				73B7A9301AEF2C2500EC2E30 /* jquery-widgets in Resources */,
-				73B7A92D1AEF2C2500EC2E30 /* docs in Resources */,
-				73B7A92B1AEF2C2500EC2E30 /* animgenerator in Resources */,
-				73B7A9391AEF2C2500EC2E30 /* templates in Resources */,
-				73B7A9381AEF2C2500EC2E30 /* src in Resources */,
-				73B7A92C1AEF2C2500EC2E30 /* build in Resources */,
 				737C7F461ADC5A530059048E /* CallNative.js in Resources */,
 				73B7A6211AEC97AD00EC2E30 /* jsoncpp in Resources */,
+				73181D661B000B6400E0428F /* json-editor in Resources */,
 				737C7F1E1ADC58550059048E /* Images.xcassets in Resources */,
-				73B7A9131AEF29FA00EC2E30 /* js in Resources */,
-				73B7A93A1AEF2C2500EC2E30 /* test in Resources */,
-				73B7A9111AEF29FA00EC2E30 /* templates in Resources */,
-				73B7A9351AEF2C2500EC2E30 /* partials in Resources */,
-				73B7A92A1AEF2C2500EC2E30 /* ajax.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +316,6 @@
 				737C7F161ADC58550059048E /* AppDelegate.m in Sources */,
 				737C7F131ADC58550059048E /* main.m in Sources */,
 				737C810E1ADDB1CA0059048E /* logicExecutor.cpp in Sources */,
-				73B7A9361AEF2C2500EC2E30 /* README.md in Sources */,
 				73B7A62C1AEC9C9800EC2E30 /* json_writer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

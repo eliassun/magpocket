@@ -34,7 +34,10 @@ var tonamePlayVideo= function(parameters){
     
     tonamePlaying();
     
+}
 
+var tonameCreate(parameters){
+    tonameCallNativeFunc(parameters);
 }
 
 var tonameAlert = function(parameters)

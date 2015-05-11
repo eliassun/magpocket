@@ -9,6 +9,8 @@ $(document).ready(function(){
     })
     $("#longtaptest").bind("longTap",function(){
         alert("I was a long tap");
+                           tonameCallNativeFunc("{func:'dialpad',handlerid:'001',callback:'dialpadCallBack', name: 'Bryan', company: 'Tumblr'}");
+
     })
     $("#doubletaptest").bind("doubleTap",function(){
         alert("I was a double tap");

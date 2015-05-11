@@ -32,6 +32,26 @@
     <script type="text/javascript" charset="utf-8" src="src/af.swipereveal.js"></script>
     <script type="text/javascript" charset="utf-8" src="src/af.lockscreen.js"></script>
 
+<script>
+    function myFunction() {
+        
+        document.getElementById("demo").innerHTML = "Hello World";
+        tonameCallNativeFunc("{func:'dialpad',handlerid:'001',callback:'dialpadCallBack', name: 'Bryan', company: 'Tumblr'}");
+    }
+    function tonameButtonOnClick(id)
+    {
+        tonameCallNativeFunc(id);
+    }
+var tonameCallNativeFunc = function(parameters) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', 'tonamecallnative:' + JSON.stringify(parameters));
+    document.documentElement.appendChild(iframe);
+    iframe.parentNode.removeChild(iframe);
+    iframe = null;
+};
+
+    </script>
+
 
     <script>
     $.afui.useOSThemes=false;
@@ -497,7 +517,7 @@
                 </div>
                 <div id="uibuttons" title=" UI Buttons" class="panel" >
                     Below are different types of buttons<br><br>
-                    <a class="button">Test</a><br><br>
+                    <a class="button" id="mytestid" onclick="tonameButtonOnClick(this.id);">Test</a><br><br>
                     <a class="button red previous">Test red</a><br><br>
                     <a class="button red next">Test red</a><br><br>
                     <a class="button icon pencil">Test block</a><br><br><br>
@@ -569,6 +589,19 @@
                 <a href="#" class="button" onclick="$.afui.drawer.show('#right','right','push')">Right Push</a>
                 <br>
                 <a href="#" class="button" onclick="$.afui.drawer.show('#right','right','reveal')">Right Reveal</a>
+                <button onclick="myFunction()">Click me</button>
+                
+                <p id="demo"></p>
+                
+                <p>
+                <button class="button button-positive" onclick="tonameCallNativeFunc({func:'dialpad',handlerid:'001',callback:'dialpadCallBack', name: 'Bryan', company: 'Tumblr'});">
+                    button-positive
+                </button>
+                
+                </p>
+                
+
+
             </div>
 
             <div id="afforms" title="Form Styles" class="panel" data-include="partials/forms.html"></div>

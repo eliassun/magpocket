@@ -19,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"indexaf" ofType:@"html"]];
+    //NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"indexaf" ofType:@"html"]];
+    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"intelAF/indexaf" ofType:@"html"]];
+
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_FrontWebView setDelegate:self];
     [_FrontWebView loadRequest:requestObj];
@@ -27,6 +30,14 @@
     self.cpu = new SoftCPUInputOutputManager;
     self.cpu->setcmdfunc(getNextEntry);
     
+    self.cpu->saveValByJson((char*)"{\"@A\":\"15\"}");
+    self.cpu->saveValByJson((char*)"{\"@B\":\"16\"}");
+    self.cpu->saveValByJson((char*)"@C","17");
+   
+    self.cpu->dumproompool();
+    char value[50];
+    const char* v=self.cpu->getJsonVal((char*)"A",value);
+    printf("A v=%s\n",v);
     //self.cpu->newEvent((char*)"{\"onclick\":{\"timestamp\":\"4455\",\"value\":\"990\"}}");
     //self.cpu->newEvent((char*)"{\"onchange\":{\"timestamp\":\"4455\",\"value\":\"990\"}}");
     //self.cpu->readEvent((char*)"uid0000000001");
@@ -37,6 +48,7 @@
     //self.cpu->elLoadApp([jsPath UTF8String]);
     [NSThread detachNewThreadSelector:@selector(startTheBackgroundJob) toTarget:self withObject:nil];
     
+
 }
 
 - (void)startTheBackgroundJob {
@@ -72,8 +84,11 @@
     NSString *urlString = [[request URL] absoluteString];
     
     if ([urlString hasPrefix:@"tonamecallnative:"]) {
+        
+        
         NSString *jsonString = [[urlString componentsSeparatedByString:@"tonamecallnative:"] lastObject] ;
         jsonString=[jsonString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        /*
         NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
         
         NSError *error;
@@ -81,9 +96,11 @@
         
         if (!error) {
             // TODO: Logic based on parameters
+            
         }
-        [webView stringByEvaluatingJavaScriptFromString:@"tonameCallBack({id:'0001',name:'hello'})"];
-        [webView stringByEvaluatingJavaScriptFromString:@"tonamePlayVideo({gui:['uid000001','uid000002']})"];
+         */
+        //[webView stringByEvaluatingJavaScriptFromString:@"tonameCallBack({id:'0001',name:'hello'})"];
+        //[webView stringByEvaluatingJavaScriptFromString:@"tonamePlayVideo({gui:['uid000001','uid000002']})"];
         return NO;
     }
     
